@@ -1,0 +1,425 @@
+.body{
+    margin: 0;
+    line-height: 1.4;
+    font-family: Raleway, sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.nav{
+    background-color: #1B1B1B;
+    width: 1110px;
+    height: 70px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.topMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.socialMediaIcons{
+    width: 107px;
+    height: 17px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a{
+    color: #9C9C9C;
+    text-decoration: none;
+}
+.nav img{
+    width: 20px;
+    height: 20px;
+    filter: invert(0.5);
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.headerText{
+    width: 538px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    opacity: 1;
+}
+
+.headingAndSubheading{
+    width: 492px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.heading1{
+    width: 426px;
+    height: 182px;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.introduction h1{
+    display: flex;
+    color: white;
+    font-size: 44px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: start;
+}
+
+.introduction img{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
+
+.callToActionHeader{
+    width: 308px;
+    height: 63px;
+    background-color: #3F8E00;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.callToActionHeader a{
+    text-decoration: none;
+    color: white;
+}
+
+.workedWith{
+    width: 1110px;
+    height: 18px;
+    align-items: start;
+    margin-bottom: 50px;
+    text-align: start;
+    margin-left: 170px;
+}
+.header h2{
+    color: white;
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    font-weight: 50;
+    text-align: start;
+}
+
+.clientLogos{
+    width: 920px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo{
+    width: 160px;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg{
+    width: 40%;
+    height: 40%;
+    filter: invert(0.5);
+
+}
+
+
+.main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading p{
+    justify-content: center;
+    text-align: center;
+    width: 570px;
+    height: 72px;
+    margin: 0;
+}
+.heading h2{
+    color: black;
+    font-size: 34px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.caseStudies{
+    width: 897px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.work{
+    width: 892px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.workPhoto img{
+    display: flex;
+    width: 445px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+
+.callToAction1{
+    width: 190px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #FFA217;
+}
+.workTag1{
+    width: 72px;
+    height: 24px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6E9;
+    margin-bottom: 10px;
+    color: #FFA217;
+    font-size: 12px;
+}
+
+.callToAction2{
+    width: 190px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #000AFF;
+}
+.workTag2{
+    width: 72px;
+    height: 24px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0E6FF;
+    margin-bottom: 10px;
+    color: #000AFF;
+    font-size: 12px;
+}
+
+.callToAction3{
+    width: 190px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #2AB090;
+}
+.workTag3{
+    width: 72px;
+    height: 24px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0FFF8;
+    margin-bottom: 10px;
+    color: #2AB090;
+    font-size: 12px;
+}
+
+.work a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.work h3{
+    margin: 0;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: start;
+}
+
+.introText{
+    width: 421px;
+    height: 96px;
+    text-align: start;
+}
+
+
+.testimonials{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.testimonials h2{
+    color: white;
+    font-size: 34px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimonialsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 897px;
+    gap: 30px;
+}
+
+.testimonialsContainer h1{
+    color: white;
+    font-size: 100px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    text-align: start;
+    margin: 0;
+}
+
+
+
+.recentWork{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 35px;
+}
+
+.workContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.workX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 445px;
+    height: 494px;
+    gap: 10px;
+}
+
+
+.callToAction{
+    width: 190px;
+    height: 38px;
+    background-color: #3F8E00;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.callToAction a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #9C9C9C;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    font-size: 15px;
+}
