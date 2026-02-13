@@ -7,6 +7,10 @@
     height: 100%;
 }
 
+.body a{
+    text-decoration: none;
+}
+
 .header{
     width: 100%;
     background-color: black;
@@ -49,8 +53,8 @@
 
 .nav a{
     color: #9C9C9C;
-    text-decoration: none;
 }
+
 .nav img{
     width: 20px;
     height: 20px;
@@ -116,12 +120,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.callToActionHeader a{
     text-decoration: none;
     color: white;
 }
+
 
 .workedWith{
     width: 1110px;
@@ -301,7 +303,6 @@
 }
 
 .work a{
-    text-decoration: none;
     color: white;
     font-size: 14px;
 }
@@ -437,7 +438,6 @@
 }
 
 .callToAction a{
-    text-decoration: none;
     color: white;
     font-size: 14px;
 }
