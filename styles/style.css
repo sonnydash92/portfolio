@@ -26,6 +26,7 @@
     width: 100%;
     justify-items: center;
     padding: 0 85px;
+    z-index: 100;
 }
 
 
@@ -41,7 +42,7 @@
     gap: 95px;
     padding: 0 95px;
     width: 100%;
-    max-width: 2280px;
+    max-width: 1500px;
     position: fixed;;
 }
 
@@ -84,29 +85,31 @@
     width: 100%;
     height: auto;
     padding-top: 150px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-left: 180px;
-    padding-right: 180px;
     background-color: black;
-    justify-items: center;
+    justify-content: center;
+
 }
 
 .bannerContainer{
     display: flex;
     flex-flow: row;
     align-items: center;
-    gap: 32px;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: space-between;
 }
 
 .textAndCallBanner{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-items: center;
     align-items: start;
     gap: 30px;
     padding-top: 50px;
+    justify-content: center;
 
 }
 
@@ -115,10 +118,12 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-items: start;
     gap: 10px;
 }
 .text-banner p{
     padding-top: 44px ;
+    max-width: 593px;
 }
 
 
@@ -155,10 +160,10 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    justify-items: center;
+    align-items: start;
     color: white;
+    flex: 0 1.5 auto;
 
 }
 
@@ -177,12 +182,13 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: stretch;
-    gap: 10px;
-    margin-bottom: 45px;
+    flex: 1 2 auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 0 45px;
+    padding-left: 180px;
+    padding-right: 180px;
 
 }
 
@@ -198,7 +204,6 @@
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
     align-items: center;
     border-radius: 8px;
     background-color: black;
@@ -233,9 +238,8 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
+
 }
 
 .heading{
@@ -243,15 +247,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     gap: 10px;
 }
 .heading p{
-    justify-content: center;
     text-align: center;
     width: 100%;
-    height: 72px;
-    margin: 0;
+    height: auto;
+    margin: 0 180px;
+    min-width: 375px;
+    max-width: 915px;
 }
 .heading h2{
     color: black;
@@ -266,13 +271,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 70px;
-    margin-top: 35px;
-    margin-bottom: 40px;
-    margin-left: 180px;
-    margin-right: 180px;
+    justify-content: center;
+    gap: 80px;
+    padding:35px 180px 40px;
+
 }
 
 .work{
@@ -280,8 +283,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
 
 }
 
@@ -290,8 +294,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
 
 }
 
@@ -301,6 +306,14 @@
     height: 300px;
     border-radius: 8px;
 }
+
+.workText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 
 
 .callToAction1{
@@ -395,9 +408,18 @@
     text-align: start;
 }
 
+.work1 h3{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: start;
+}
+
 .introText{
-    width: 421px;
-    height: 96px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 445px;
+    height: auto;
     text-align: start;
 }
 
@@ -409,8 +431,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 35px;
+    gap: 70px;
+    padding:45px 180px 50px;
 }
 
 .testimonials h2{
@@ -418,14 +440,20 @@
     font-size: 34px;
     font-weight: 700;
     text-align: center;
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
+
 .testimonialsContainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 897px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    width: 100%;
+    min-width: 409px;
+    max-width: 1000px;
 }
 
 .testimonialsContainer h1{
@@ -435,7 +463,7 @@
     text-align: start;
     margin: 0;
 }
-.testimonialintroduction{
+.testimonial-introduction{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,6 +500,8 @@
     background: linear-gradient(to right, #484848 0%, black 100%);
     padding: 1px;
     border-radius: 6px;
+    min-width: 409px;
+    max-width: 480px;
 }
 
 
@@ -480,26 +510,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 80px;
     margin-bottom: 35px;
+    width: 100%;
+    padding:35px 180px 40px;
 }
 
 .workContainer{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .workX{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 445px;
-    height: 494px;
+    justify-content: space-around;
+
+    height: auto;
     gap: 10px;
+
 }
+
 
 
 .callToAction{
