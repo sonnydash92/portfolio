@@ -94,7 +94,7 @@
 
 .bannerContainer{
     display: flex;
-    flex-flow: row wrap-reverse;
+    flex-direction: row;
     align-items: center;
     padding-left: 180px;
     padding-right: 180px;
@@ -120,12 +120,10 @@
     align-items: start;
     justify-items: start;
     gap: 10px;
-    flex: 2 2 auto;
 }
 .text-banner p{
     padding-top: 44px ;
     max-width: 593px;
-    flex: 2 2 auto;
 }
 
 
@@ -137,7 +135,6 @@
     font-size: 44px;
     font-weight: 700;
     text-align: start;
-    flex: 2 2 auto;
 }
 
 .bannering{
@@ -145,7 +142,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
 }
 
 .bannering img{
@@ -153,7 +149,6 @@
     width: 350px;
     height: 350px;
     border-radius: 100%;
-    flex: 1 1 auto;
 }
 
 .call-banner{
@@ -165,8 +160,8 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-items: center;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     color: white;
     flex: 0 1.5 auto;
 
@@ -239,6 +234,7 @@
 
 .main{
     width: 100%;
+    height: auto;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -286,7 +282,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -297,7 +292,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -305,6 +299,7 @@
 }
 
 .workPhoto img{
+    object-fit: cover;
     display: flex;
     width: 445px;
     height: 300px;
@@ -422,7 +417,7 @@
 .introText{
     width: 100%;
     max-width: 500px;
-    min-width: 445px;
+    min-width: 300px;
     height: auto;
     text-align: start;
 }
@@ -436,7 +431,7 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    padding:45px 180px 50px;
+    padding:45px 30px 50px;
 }
 
 .testimonials h2{
@@ -456,7 +451,6 @@
     align-items: center;
     gap: 30px;
     width: 100%;
-    min-width: 409px;
     max-width: 1000px;
 }
 
@@ -517,12 +511,12 @@
     gap: 80px;
     margin-bottom: 35px;
     width: 100%;
-    padding:35px 180px 40px;
+    padding:35px 30px 40px;
 }
 
 .workContainer{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -571,4 +565,133 @@ p{
     align-items: start;
     color: #9C9C9C;
     font-size: 15px;
+}
+
+@media screen and (max-width: 1050px) {
+    .bannerContainer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .caseStudies{
+        padding:35px 10px 40px;
+    }
+    .work{
+        gap: 10px;
+    }
+    .work1 {
+        gap: 10px;
+    }
+
+    .topbar{
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 10px;
+    }
+    .nav{
+        gap: 50px;
+    }
+
+
+
+    .testimonials{
+        padding:45px 10px 50px;
+    }
+    .testimonialsContainer{
+        gap: 10px;
+    }
+
+    .recentWork{
+        padding:35px 10px 40px;
+    }
+
+    .workContainer{
+        flex-flow: row;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .bannerContainer{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-flow: row wrap-reverse;
+    }
+
+
+    .textAndCallBanner{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        justify-content: center;
+
+    }
+
+    .text-banner{
+        padding-right:0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+
+    }
+
+    .text-banner p{
+        max-width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+
+
+    .text-banner h1{
+        width: 100%;
+        display: flex;
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .caseStudies{
+        width: 100%;
+        gap: 50px;
+        padding:10px 10px 10px;
+        margin:0 10px;
+    }
+
+    .workPhoto img{
+        width: 400px;
+        height: 250px;
+    }
+
+    .callToAction1 {
+        margin-top: 0;
+    }
+    .callToAction2 {
+        margin-top: 0;
+    }
+    .callToAction3 {
+        margin-top: 0;
+    }
+
+    .work{
+        flex-wrap: wrap-reverse;
+    }
+
+    .work1{
+        flex-wrap: wrap;
+    }
+
+    .workContainer{
+        flex-wrap: wrap;
+    }
+
+    .workX{
+        align-items: center;
+    }
+
 }
