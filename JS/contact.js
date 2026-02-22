@@ -1,44 +1,53 @@
-/*let randomNumber = function(min, max){
+let randomNumber = function(min, max){
     const minCeil = Math.ceil(min);
     const maxFloor = Math.floor(max);
     return Math.floor(Math.random() * (maxFloor - minCeil) + minCeil);
 }
 
-let playerNumber = prompt("Enter your number");
+const guess = randomNumber(1, 10)
 
-
-function comparers(playerNumber, randomNumber){
-    if(playerNumber === randomNumber){
-        console.log("You win");
+function isRight(n){
+    if (n === guess) {
+        return true
     }
-    else if(playerNumber > randomNumber){
-        console.log("Moins");
+    else if (n > guess) {
+        return false
     }
-    else{
-        console.log("Plus");
+    else {
+        return false
     }
 }
 
-while(playerNumber !== randomNumber(1, 10)){
-    playerNumber = prompt("Enter your number");
-    comparers(playerNumber, randomNumber(1, 10))
-    i++
-}*/
+
+for (let i = 0; i < 3; i++) {
+    let numberPlayer = prompt("Enter your number")*1
+    if (isRight(numberPlayer)) {
+        console.log("You win!")
+        break
+    }
+    else if (!isRight(numberPlayer)) {
+        if (numberPlayer > guess){
+            console.log("Too high")
+        }
+        else if (numberPlayer < guess){
+            console.log("Too low")
+        }
+        else if (i === 2)  {
+            console.log("You lose, the number is " + guess)
+        }
+    }
 
 
-let listeFilms = ["lilo&Stich", "Matrix", "Evil Dead"]
-const year = 2026
-let birthday = prompt("Veillez entrer votre datee de naissance")
-
-let age = year - birthday
-
-
-if (age <= 13){
-    console.log(`Vous avez ${age +""+ `ans`}, vous pouvez regarder ${listeFilms[0]}`)
 }
-else if(age < 18){
-    console.log(`Vous avez ${age +""+ `ans`}, vous pouvez regarder ${listeFilms[1]}`)
-}
-else {
-    console.log(`Vous avez ${age +""+ `ans`}, vous pouvez regarder ${listeFilms[2]}`)
-}
+
+
+
+
+
+
+
+
+
+
+
+
